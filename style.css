@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: roboto;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+.navbar{
+    height: 100%;
+    background-color: white;
+    flex: 1; 
+    position: relative;
+}
+.navbar a{
+    text-decoration: none;
+}
+.display{
+    height: 100vh;
+    flex: 6;
+    position: relative;
+    overflow-y: auto;
+    background-color: rgb(245, 241, 241); 
+
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: url('./images/img2.jpg');
+    background-size: cover;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.navbar .name{
+    width:100;
+    height:20%;
+    background-color: #fafafa;
+    text-align: left;
+    font-family: roboto;
+    cursor: pointer;
+    
+}
+.navbar h2{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 31.5px;
+    color: #008043;
+
+}
+.navbar h3{
+    text-align: center;
+    color: #795548;
+    font-size: small;
+}
+.nav_option a{
+    text-decoration: none;
+    font-size: 15px;
+    color:#333333;
+    cursor: pointer;
+    display: flex;
+    height: 42px;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+ .fas{
+     text-align: left;
+     padding:0 15px 0 10px;
+     font-size: 20px;
+     height: 32px;
+     width: 50px;
+ }
+ .heading{
+     font-size: 30px;
+     font-weight: 300;
+     padding: 50px;
+     color: #ffffff;
+     text-transform: capitalize;
+ }
+ .arpit{
+     background-color:#008073;
+ }
+ .line{
+    text-decoration: underline #008043 ;
+ }
+ .about:hover{
+    background-color:#fafafa;
+    border-left: 5px solid #008073;
+
+ }
+ .Academics:hover{
+    background-color:#fafafa;
+    border-left: 5px solid #ff9800;
+ }
+ .Projects:hover{
+    background-color:#fafafa;
+    border-left: 5px solid #3F51B5;
+ }
+ .Skills:hover{
+    background-color:#fafafa;
+    border-left: 5px solid #9c27B0;
+ }
+ .Certificates:hover{
+    background-color:#fafafa;
+    border-left: 5px solid #f44336;
+ }
+ .Resume:hover{
+    background-color:#fafafa;
+    border-left: 5px solid #424242;
+ }
+ .Contact:hover{
+    background-color:#fafafa;
+    border-left: 5px solid #795548;
+ }
+ .About{
+     /* margin-top: 30px; */
+     background-color: #1f754c;
+     text-transform: uppercase;
+     width: 100%;
+     height: 90px;
+     padding: 30px 20px 40px 20px;
+     font-size: 30px;
+     color: white;
+     font-weight: 200;
+ }
+ .photo_section{
+     text-align: center;
+ }
+.section1>.photo_section> img{
+    margin: 40px 0 0 0; 
+    width: 160px;
+    height: 160px;
+    border-radius: 50%; 
+ }
+ .discription{
+     margin-left:110px;
+     font-size: 20px;
+     padding-left: 15px;
+     text-transform: capitalize;
+     text-align: left;
+     border-left: 5px solid #795548;
+     color:  #795548;
+ }
+ .discription2{
+     margin: 30px 0 0 110px;
+     text-align: left;
+     font-weight: 100;
+     font-size: 20px;
+     color: #333333;
+ }
+ /* adacdemic css */
+ .academic{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+     flex-wrap: wrap;
+ }
+ .gradution {
+     height: 300px;
+     width :300Px;
+     background-color:#ffffff;
+     margin-top: 30px;
+     border-radius: 2rem; 
+     margin-bottom: 30px;
+     box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+     align-items: center;
+     font-weight: 200;
+ }
+ .gradution>header {
+     padding-top: 30px;
+     text-align: center;
+ }
+ header a{
+    text-decoration: none;
+    color: #008073;
+    font-weight: 300;
+ }
+ header h4{
+    color: #795548;
+    font-weight: 400;
+    font-size: 15px;
+ }
+ .details{
+     text-align: left;
+     padding: 20px;
+ }
+ #list{
+     text-align: left;
+ }
+ .section4{
+     width: 100%;
+ }
+ .skill_type{
+     width:100%;
+     height:130vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     align-items: center;
+ }
+ .languages{
+     height: 20%;
+     width: 85%;
+     background-color:white;
+     box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+ }
+ .same{
+     color: #795548;
+     text-transform: uppercase;
+     font-weight: 200;
+     padding: 1rem;
+ }
+ ul{
+     list-style-type: none;
+ }
+ li{
+     float: left;
+     display: block;
+     margin: 14px 0 0 14px; 
+ }
+ul li img{
+    height: 60px; 
+}
+.section5>.contacts>a{
+    text-decoration: none;
+}
+
+
+ 
+ 
+ 
