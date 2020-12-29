@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
     font-family: roboto;
+}
+a{
+    text-decoration: none;
 }
 .container{
     width: 100vw;
@@ -30,7 +36,7 @@
 .home{
     width: 100%;
     height: 100vh;
-    background-image: url('./images/img2.jpg');
+    background-image:url('./images/img2.jpg');
     background-size: cover;
     overflow: hidden;
     scroll-behavior: smooth;
@@ -117,7 +123,6 @@
     border-left: 5px solid #795548;
  }
  .About{
-     /* margin-top: 30px; */
      background-color: #1f754c;
      text-transform: uppercase;
      width: 100%;
@@ -128,26 +133,101 @@
      font-weight: 200;
  }
  .photo_section{
+     margin: 0;
+     padding: 0;
+     height: 100vh;
+     display: flex;
+     position: relative;
+     /* flex-direction: row; */
+     justify-content: space-around;
      text-align: center;
+     align-items: center;
  }
-.section1>.photo_section> img{
-    margin: 40px 0 0 0; 
-    width: 160px;
-    height: 160px;
-    border-radius: 50%; 
+ .profile_card{
+     position: relative;
+     width: 250px;
+     height: 400px;
+     background: url(./images/arpit_img.jpg);
+     box-shadow: 0 0 5px 5px rgba(0, 0, 0, .2);
+     background-size: 100% 100%;
+     border-radius: 10px;
+     transition: 0.6s;
+ }
+ .content_box{
+     width: 300px;
+     height: 180px;
+     background: #03a9f48f;
+     position: absolute;
+     right:-100px;
+     top: 100px;
+     border-radius: 10px;
+     text-align: center;
+     opacity: 0;
+     transform: scaleX(0);
+     transition: 0.6s;
+ }
+ .content{
+    font-family: 'Ubuntu', sans-serif;
+     color: #ffffff;
+     font-weight: 900;
+     z-index: 2;
+ }
+ .social a{
+     font-size: 25px;
+     color: #ffffff;
+     transition: 0.5s;
+     margin: 15px;
+ }
+ .social a:hover{
+     transform: scale(1.5) rotate(30deg);
+ }
+ .cont{
+     margin-top: 30px;
+     position: relative;
+ }
+ .cont a{
+     background: #ffffff;
+     color: #03A9F4;
+     width: 30px;
+     height: 30px;
+     padding: 10px;
+     margin-top: 10px;
+     border-radius: 50px;
+     font-size: 10px;
+     transition: 0.6s;
+ }
+ .cont a:hover{
+     width: 60px;
+     padding-left: 25px;
+
+ }
+ .profile_card:hover{
+     box-shadow: 1px 20px 30px rgba(0,0,0,0.5)
+ }
+ .profile_card:hover .content_box{
+     opacity: 1;
+     transform: scaleX(1);
+ }
+ .profile_card:hover .social a{
+     margin-top: 30px;
+ }
+ .detail{
+     width: 70%;
+    
  }
  .discription{
-     margin-left:110px;
      font-size: 20px;
-     padding-left: 15px;
+     padding: 15px;
+     margin-left: 110px;
      text-transform: capitalize;
      text-align: left;
      border-left: 5px solid #795548;
      color:  #795548;
  }
  .discription2{
-     margin: 30px 0 0 110px;
+     margin: 30px 0 0 0;
      text-align: left;
+     margin-left: 110px;
      font-weight: 100;
      font-size: 20px;
      color: #333333;
@@ -159,21 +239,62 @@
      justify-content: space-evenly;
      flex-wrap: wrap;
  }
- .gradution {
-     height: 300px;
-     width :300Px;
-     background-color:#ffffff;
+ .gradution1{
+    height: 100px;
+    width :300Px;
+    background-color:#ffffff;
+    margin-top: 30px;
+    border-radius: 2rem; 
+    margin-bottom: 30px;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    align-items: center;
+    font-weight: 200;
+    overflow: hidden;
+    transition: height,2s;
+}
+.gradution1:hover{
+    height: 300px;
+}
+.gradution1>header {
+    padding-top: 30px;
+    text-align: center;
+}
+/* certificate section styling */
+.section5{
+    background-color: white;
+    margin-top: 30px;
+}
+.academics{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: auto;
+    margin-bottom: 30px;
+}
+.academics .certificate_details{
+    /* position: absolute; */
+     width: 20rem;
+     height: 20rem;
      margin-top: 30px;
-     border-radius: 2rem; 
-     margin-bottom: 30px;
-     box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+     border-radius: 2px; 
+     box-shadow: 15px 15px 30px rgba(0,0,0,0.3); 
+     display: flex;
+     justify-content: space-around;
      align-items: center;
-     font-weight: 200;
- }
- .gradution>header {
-     padding-top: 30px;
-     text-align: center;
- }
+}
+.academics .certificate_details{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 70px;
+}
+.academics .certificate_details h1{
+    font-family: 'Lobster Two', cursive;
+    color: #008043;
+    text-shadow: 12px 12px 5px rgba(0,0,0,0.3);
+}
  header a{
     text-decoration: none;
     color: #008073;
@@ -186,16 +307,17 @@
  }
  .details{
      text-align: left;
-     padding: 20px;
+     padding:20px;
  }
  #list{
      text-align: left;
  }
+ /* section4 styling */
  .section4{
-     width: 100%;
+     /* width: 100vw */
  }
  .skill_type{
-     width:100%;
+     /* width:100%; */
      height:130vh;
      display: flex;
      flex-direction: column;
@@ -203,10 +325,10 @@
      align-items: center;
  }
  .languages{
-     height: 20%;
-     width: 85%;
+     height: 10rem;
+     width: 60rem;
      background-color:white;
-     box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+     box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);    
  }
  .same{
      color: #795548;
@@ -225,11 +347,61 @@
 ul li img{
     height: 60px; 
 }
-.section5>.contacts>a{
-    text-decoration: none;
+/* section3 styling start */
+.section3{
+    background-color: white;
+    /* width: 100%;*/
+    height: auto; 
+    margin-top: 10px;
 }
-
-
- 
+.project{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.project .project_details{
+     width: 350px;
+     height: 200px;
+     margin-top: 30px;
+     border-radius: 2px; 
+     background: rgb(2,0,36);
+background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(68,56,207,0.6418767336035978) 44%, rgba(0,212,255,1) 100%);  
+     box-shadow: 15px 15px 30px rgba(0,0,0,0.3); 
+     align-items: center;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+}
+.project .project_details h1{
+    font-family: 'Lobster Two', cursive;
+    color:#ffffff;
+    text-shadow: 12px 12px 5px rgba(0,0,0,0.3); 
+}
+ /* contct section styling start */
+.p2{
+    display: flex;
+    align-items: center;
+    height: 300px;
+    overflow: hidden;
+}
+.contacts{
+    height: 100%;
+    margin: 50px 0 0 60px;
+}
+.contacts li{
+}
+.p2 ul li a{
+    text-decoration: none;
+    color: rgb(187, 73, 73);
+    font-weight: 900;
+}
+ .same ul li span{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
  
  
