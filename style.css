@@ -366,7 +366,7 @@ ul li img{
      width: 350px;
      height: 200px;
      margin-top: 30px;
-     border-radius: 2px; 
+     border-radius: 6px; 
      box-shadow: 15px 15px 30px rgba(0,0,0,0.3); 
      align-items: center;
      display: flex;
@@ -379,7 +379,6 @@ ul li img{
     text-shadow: 12px 12px 5px rgba(0,0,0,0.3); 
 }
  /* contct section styling start */
-
 .contact_last{
  display: flex;
  justify-content: start;
