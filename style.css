@@ -367,8 +367,6 @@ ul li img{
      height: 200px;
      margin-top: 30px;
      border-radius: 2px; 
-     background: rgb(2,0,36);
-background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(68,56,207,0.6418767336035978) 44%, rgba(0,212,255,1) 100%);  
      box-shadow: 15px 15px 30px rgba(0,0,0,0.3); 
      align-items: center;
      display: flex;
@@ -377,31 +375,23 @@ background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(68,56,207,0.641876733
 }
 .project .project_details h1{
     font-family: 'Lobster Two', cursive;
-    color:#ffffff;
+    color:#008043;
     text-shadow: 12px 12px 5px rgba(0,0,0,0.3); 
 }
  /* contct section styling start */
-.p2{
+
+.contact_last{
+ display: flex;
+ justify-content: start;
+ flex-direction: row;
+
+}
+.contact_last img{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
     display: flex;
-    align-items: center;
-    height: 300px;
-    overflow: hidden;
+    flex-direction: column;
 }
-.contacts{
-    height: 100%;
-    margin: 50px 0 0 60px;
-}
-.contacts li{
-}
-.p2 ul li a{
-    text-decoration: none;
-    color: rgb(187, 73, 73);
-    font-weight: 900;
-}
- .same ul li span{
-     display: flex;
-     justify-content: center;
-     align-items: center;
- }
  
  
