@@ -11,7 +11,7 @@
 a{
     text-decoration: none;
 }
-.container{
+.container_box{
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -37,7 +37,7 @@ a{
     width: 100%;
     height: 100vh;
     background-image:url('./images/img2.jpg');
-    background-size: cover;
+    background-size: 100% 100%;
     overflow: hidden;
     scroll-behavior: smooth;
 }
@@ -152,6 +152,118 @@ a{
      background-size: 100% 100%;
      border-radius: 10px;
      transition: 0.6s;
+ }
+ .content_box{
+     width: 300px;
+     height: 180px;
+     background: #03a9f48f;
+     position: absolute;
+     right:-100px;
+     top: 100px;
+     border-radius: 10px;
+     text-align: center;
+     opacity: 0;
+     transform: scaleX(0);
+     transition: 0.6s;
+ }
+ .content{
+    font-family: 'Ubuntu', sans-serif;
+     color: #ffffff;
+     font-weight: 900;
+     z-index: 2;
+ }
+ .social a{
+     font-size: 25px;
+     color: #ffffff;
+     transition: 0.5s;
+     margin: 15px;
+ }
+ .social a:hover{
+     transform: scale(1.5) rotate(30deg);
+ }
+ .content_box{
+     width: 300px;
+     height: 180px;
+     background: #03a9f48f;
+     position: absolute;
+     right:-100px;
+     top: 100px;
+     border-radius: 10px;
+     text-align: center;
+     opacity: 0;
+     transform: scaleX(0);
+     transition: 0.6s;
+ }
+ .content{
+    font-family: 'Ubuntu', sans-serif;
+     color: #ffffff;
+     font-weight: 900;
+     z-index: 2;
+ }
+ .social a{
+     font-size: 25px;
+     color: #ffffff;
+     transition: 0.5s;
+     margin: 15px;
+ }
+ .social a:hover{
+     transform: scale(1.5) rotate(30deg);
+ }
+ .content_box{
+     width: 300px;
+     height: 180px;
+     background: #03a9f48f;
+     position: absolute;
+     right:-100px;
+     top: 100px;
+     border-radius: 10px;
+     text-align: center;
+     opacity: 0;
+     transform: scaleX(0);
+     transition: 0.6s;
+ }
+ .content{
+    font-family: 'Ubuntu', sans-serif;
+     color: #ffffff;
+     font-weight: 900;
+     z-index: 2;
+ }
+ .social a{
+     font-size: 25px;
+     color: #ffffff;
+     transition: 0.5s;
+     margin: 15px;
+ }
+ .social a:hover{
+     transform: scale(1.5) rotate(30deg);
+ }
+ .content_box{
+     width: 300px;
+     height: 180px;
+     background: #03a9f48f;
+     position: absolute;
+     right:-100px;
+     top: 100px;
+     border-radius: 10px;
+     text-align: center;
+     opacity: 0;
+     transform: scaleX(0);
+     transition: 0.6s;
+ }
+ .content{
+    font-family: 'Ubuntu', sans-serif;
+     color: #ffffff;
+     font-weight: 900;
+     z-index: 2;
+ }
+ .social a{
+     font-size: 25px;
+     color: #ffffff;
+     transition: 0.5s;
+     margin: 15px;
+ }
+ .social a:hover{
+     transform: scale(1.5) rotate(30deg);
  }
  .content_box{
      width: 300px;
@@ -313,22 +425,23 @@ a{
      text-align: left;
  }
  /* section4 styling */
- .section4{
-     /* width: 100vw */
- }
  .skill_type{
-     /* width:100%; */
-     height:130vh;
+     min-height:100vh;
      display: flex;
      flex-direction: column;
      justify-content: space-evenly;
      align-items: center;
  }
  .languages{
-     height: 10rem;
-     width: 60rem;
+     width: 80vw;
      background-color:white;
      box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);    
+ }
+ .one{
+     display: flex;
+     align-items: center;
+     text-align: center;
+     margin: 8px 20px;
  }
  .same{
      color: #795548;
@@ -358,20 +471,25 @@ ul li img{
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
+    background: #ffffff;
 }
 .project .project_details{
      width: 350px;
      height: 200px;
-     margin-top: 30px;
-     border-radius: 6px; 
-     box-shadow: 15px 15px 30px rgba(0,0,0,0.3); 
+     margin: 30px 5px;
+     border-radius: 6px;  
      align-items: center;
      display: flex;
      justify-content: space-around;
      align-items: center;
+     border: 1px solid rgba(0, 0, 0, 0.1);
+}
+ .project_details:hover{
+    transform: translatey(-6px);
+    box-shadow: 12px, 12px 10px 10px rgba(0, 0, 0, 0.1);
 }
 .project .project_details h1{
     font-family: 'Lobster Two', cursive;
@@ -392,5 +510,118 @@ ul li img{
     display: flex;
     flex-direction: column;
 }
- 
- 
+@media only screen and (max-width: 656px) {
+    .navbar{
+        max-width: 0px;
+    }
+    .About{
+        background-color: #1f754c;
+        text-transform: uppercase;
+        width: 100vw;
+       max-height: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+        color: white;
+        font-weight: 200;
+    }
+    .photo_section{
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        position: relative;
+        flex-direction: column; 
+        overflow: hidden;
+    }
+    .profile_card {
+        position: relative;
+        width: 200px;
+        height: 400px;
+        background: url(./images/arpit_img.jpg);
+        box-shadow: 0 0 5px 5px rgba(0, 0, 0, .2);
+        background-size: 100% 100%;
+        border-radius: 10px;
+        transition: 0.6s;
+        margin-top: 10px;
+    }
+    .detail {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 30px;
+        width: 100vh;
+        margin-bottom: 10px;
+    }
+    .content_box{
+        visibility: hidden;
+    }
+    .detail .discription {
+        font-size: 15px;
+        margin: 0px;
+        /* margin-left: 0px; */
+        text-transform: capitalize;
+        text-align: left;
+        margin-top: 10px;
+        width: 100vw;
+        border-left: 3px solid;
+    }
+    .detail .discription2{
+        font-size: 15px;
+        margin-left:0px;
+        display: inline;
+        max-width: 100vw;
+    }
+    .project_details{
+        margin: 5px 10px 0px;
+    }
+    .academics{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        /* overflow: hidden; */
+    }
+    .academics .certificate_details{
+         width: 300px;
+         height: 100px;
+         margin: 15px 5px;
+         border-radius: 5px;  
+         display: flex;
+         align-items: center;
+    }
+    .languages{
+        margin: 10px 10px;
+        width: 95vw;
+        border-radius: 5px;
+        border: 1px solid rgba(0, 0,0, 0.1);
+        box-shadow:none;
+    }
+    .home{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .home>.heading{
+        text-align: left;
+        font-size: 15px;
+        font-weight: 900;
+        font-family: 'Poppins', sans-serif !important;
+    }
+    .content_box{
+        width: 200px;
+        height: 400px;
+        background: #03a9f48f;
+        position: absolute;
+        right:0px;
+        top: 0px;
+        border-radius: 10px;
+        text-align: center;
+        opacity: 0;
+        transform: scaleX(0);
+        transition: 0.6s;
+    }
+}
+
