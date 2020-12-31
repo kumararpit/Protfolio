@@ -575,7 +575,8 @@ ul li img{
         max-width: 100vw;
     }
     .project_details{
-        margin: 5px 10px 0px;
+        margin: 5px 10vw 5px;
+        width: 95vw;
     }
     .academics{
         display: flex;
@@ -594,7 +595,7 @@ ul li img{
     }
     .languages{
         margin: 10px 10px;
-        width: 95vw;
+       min-width: 95vw;
         border-radius: 5px;
         border: 1px solid rgba(0, 0,0, 0.1);
         box-shadow:none;
