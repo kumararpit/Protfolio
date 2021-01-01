@@ -28,6 +28,7 @@ a{
     margin: 8px 10px;
     z-index: -1;
     cursor: pointer;
+    position: fixed;
 }
 .navbar{
     height: 100%;
