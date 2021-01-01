@@ -19,7 +19,7 @@
                 <span><h2>Arpit kumar</h2></span>
                 <span><h3>Web Developer</h3></span>
             </div>
-        </a>
+             </a>
             <div class="nav_option">
               <a href="#about" class="about"  ><i  class="fas fa-user-tie" style="color: #008073;" ></i>About</a>
               <a href="#Academics" class="Academics"><i class="fas fa-graduation-cap" style="color: #ff9800;"></i>Academics</a>
@@ -32,8 +32,7 @@
         </div>
         <div class="display">
             <a name="home"></a>
-            <div class="home">
-                <i class="fa fa-bars" aria-hidden="true" id="navicon" onclick=""></i>
+            <div class="home"> 
                 <div class="heading">
                     <h1>Hello I'M <span class="arpit" id="arpit">Arpit Kumar</span><br>Nice
                       <span class="line">To meet you!!!</span>  </br>
@@ -232,15 +231,62 @@
                         
                     </div>
            </div>
+            <div class="navhide">
+                <a href="#home">
+                    <div id="navicon" > <i class="fa fa-bars" aria-hidden="true" ></i></div>
+                 </a>
+                <div id="demo">   
+                  <a href="#about" class="about"  ><i  class="fas fa-user-tie" style="color: #008073;" ></i>About</a>
+                  <a href="#Academics" class="Academics"><i class="fas fa-graduation-cap" style="color: #ff9800;"></i>Academics</a>
+                  <a href="#project" class="Projects"><i class="fas fa-id-card" style="color: #3F51B5;"></i>Projects</a>
+                  <a href="#skill" class="Skills"><i class="fas fa-chart-bar" style="color: #9c27B0;"></i>Skills</a>
+                  <a href="#certificate" class="Certificates"><i class="fas fa-star" style="color: #f44336;"></i>Certificates</a>
+                  <a href="#contact" class="Contact"><i class="fas fa-envelope" style="color: #795548;"></i>Contact</a> 
+                  <a href="https://drive.google.com/file/d/16M0bonN0t999uopypl369w6YSAlSGbLJ/view?usp=sharing" target="_blank" class="Resume"><i class="fas fa-file-invoice" style="color: #424242;"></i>Resume</a>    
+                </div>
+            </div>
       </div>
     </div>
+    <script>
+        var bollen =true;
+        var fun = document.getElementById('navicon');
+       
+        fun.addEventListener("click",function(){
+            if(bollen){
+            document.getElementById("demo").style.left="0";
+            bollen=false;
+            }
+            else{
+                document.getElementById("demo").style.left="-150px";
+            bollen=true;
+            }
+        });
+       
+   
+   
+    </script>
    <script src="vanilla-tilt.js"></script>
    <script type="text/javascript">
 	VanillaTilt.init(document.querySelector(".profile_card"), {
 		max: 25,
 		speed: 400
-	});
+    });
 </script>
+<!-- <script>
+     var prevscrollpos=window.pageYOffset;
+    window.onscroll=function(){
+        var currentscrollpos=window.pageYOffset;
+        if(prevscrollpos>currentscrollpos){
+        var x  = document.getElementById("navicon");
+        var y=x.getElementsByTagName("i");
+        y.style.backgroundcolor="red";
+        }
+        else{
+            document.getElementById("navicon").getElementsByTagName("i").style.top='-50px';
+        }
+        prevscrollpos=currentscrollpos;
+    }
+</script> -->
 </body>
 
 </html>
