@@ -20,12 +20,12 @@ a{
     display: flex;
 }
 #navicon {
-    font-size: 7px;
+    font-size: 25px;
     color: white;
     position: absolute;
     top: 0;
     right: 0;
-    margin: 5px;
+    margin: 8px 10px;
     opacity: 0;
 }
 .navbar{
