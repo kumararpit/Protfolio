@@ -28,7 +28,6 @@ a{
     margin: 8px 10px;
     z-index: -1;
     cursor: pointer;
-    position: fixed;
 }
 .navbar{
     height: 100%;
@@ -535,17 +534,17 @@ ul li img{
     left: 0;
     width: 150px;
     min-height:100vh ;
+    position: fixed;
 }
 #demo{
     margin-top: 40px;
     width: 100%;
     height: 100%;
-    background: white;
-    position: absolute;
+    /* background:#fafafa; */
+    position: relative;
     left: -150px;
     transition: 1.5s;
     cursor: pointer;
-    background: transparent;
 }
 #demo a{
     text-decoration: none;
